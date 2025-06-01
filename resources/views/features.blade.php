@@ -82,41 +82,59 @@
         <h1 class="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white">Introducing our <span class="text-blue-600 dark:text-blue-500">wonderful</span> Features.</h1>
         <p class="text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400"> in our inventory management system</p>
     </div>
-    <div class="container w-20 flex justify-center space-x-5 mx-auto px-4 py-8"> 
-        <div class="card bg-gray-100 dark:bg-gray-800 shadow-lg p-6 rounded-lg">
-            <i data-feather="user" class="w-20 h-20 m-3 justify-center text-blue-500"></i>
-            <h2 class="text-4xl min-w-80 font-extrabold dark:text-white">Sultan Rafi Djafar</h2>
-            <p class="my-4 text-lg text-gray-500">Sultan turut serta dalam merancang struktur database, menyusun migrasi awal, serta mengembangkan fitur kategori dan logikanya. Ia juga membantu merancang tampilan antarmuka awal menggunakan prinsip desain modern yang selaras dengan kebutuhan sistem.
-            </p>
-            <p class="mb-4 text-lg font-normal text-gray-500 dark:text-gray-400">Deliver great service...</p>
-            <a href="#" class="inline-flex items-center text-lg text-blue-600 dark:text-blue-500 hover:underline">
-                Read more
-                <svg class="w-3.5 h-3.5 ms-2 rtl:rotate-180" ...></svg>
-            </a>   
-        </div>    
-        <div class="card min-w-80 bg-gray-100 dark:bg-gray-800 shadow-lg p-6 rounded-lg">
-            <div class="flex justify-center">
-                <i data-feather="star" class="w-20 h-20 m-3 text-blue-500"></i>
-            </div>
-            <h2 class="text-4xl font-extrabold dark:text-white">Muhamad Arriza Risky</h2>
-            <p class="my-4 text-lg text-gray-500">Arriza berperan besar dalam pengembangan inti sistem, mulai dari pengkodean fitur utama, integrasi antarmuka, hingga pengujian fungsionalitas. Ia memastikan keseluruhan alur aplikasi berjalan sesuai kebutuhan dan standar yang diharapkan oleh tim.</p>
-            <p class="mb-4 text-lg font-normal text-gray-500 dark:text-gray-400">Deliver great service...</p>
-            <a href="#" class="inline-flex items-center text-lg text-blue-600 dark:text-blue-500 hover:underline">
-                Read more
-                <svg class="w-3.5 h-3.5 ms-2 rtl:rotate-180" ...></svg>
-            </a>   
-        </div>    
-        <div class="card bg-gray-100 dark:bg-gray-800 shadow-lg p-6 rounded-lg">
-            <div class="flex justify-end">
-                <i data-feather="user" class="w-20 h-20 m-3 text-blue-500"></i>
-            </div>
-            <h2 class="text-4xl min-w-80 font-extrabold dark:text-white">Ronatal Habeahan</h2>
-            <p class="my-4 text-lg text-gray-500">Ronatal bertanggung jawab menyusun manual book untuk memudahkan pemahaman penggunaan sistem serta mempresentasikan hasil akhir proyek kepada dosen dan audiens. Perannya penting dalam menjembatani hasil kerja tim kepada pihak luar.</p>
-            <p class="mb-4 text-lg font-normal text-gray-500 dark:text-gray-400">Deliver great service...</p>
-            <a href="#" class="inline-flex items-center text-lg text-blue-600 dark:text-blue-500 hover:underline">
-                Read more
-                <svg class="w-3.5 h-3.5 ms-2 rtl:rotate-180" ...></svg>
-            </a>   
-        </div>    
+   <div class="container mx-auto px-4 py-8 flex justify-center space-x-5">
+    <!-- Fitur 1: Manajemen Barang -->
+    <div class="card bg-gray-100 dark:bg-gray-800 shadow-lg p-6 rounded-lg max-w-sm text-center">
+        <i data-feather="box" class="w-20 h-20 mx-auto mb-4 text-blue-500"></i>
+        <h2 class="text-3xl font-extrabold dark:text-white mb-2">Manajemen Barang</h2>
+        <p class="text-gray-600 dark:text-gray-300 mb-4">
+            Tambah, edit, dan hapus data barang secara mudah dengan kategori dan supplier yang terstruktur.
+        </p>
+        <a href="#manajemen-barang" class="inline-flex items-center text-blue-600 dark:text-blue-500 hover:underline font-semibold">
+            Pelajari lebih lanjut
+            <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"></path>
+            </svg>
+        </a>
     </div>
+
+    <!-- Fitur 2: Restock & Riwayat -->
+    <div class="card bg-gray-100 dark:bg-gray-800 shadow-lg p-6 rounded-lg max-w-sm text-center">
+        <i data-feather="refresh-cw" class="w-20 h-20 mx-auto mb-4 text-blue-500"></i>
+        <h2 class="text-3xl font-extrabold dark:text-white mb-2">Restock & Riwayat</h2>
+        <p class="text-gray-600 dark:text-gray-300 mb-4">
+            Tambah stok barang dan pantau riwayat restock secara realtime untuk pengelolaan inventaris yang akurat.
+        </p>
+        <a href="#restock" class="inline-flex items-center text-blue-600 dark:text-blue-500 hover:underline font-semibold">
+            Pelajari lebih lanjut
+            <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"></path>
+            </svg>
+        </a>
+    </div>
+
+    <!-- Fitur 3: Notifikasi & Dashboard -->
+    <div class="card bg-gray-100 dark:bg-gray-800 shadow-lg p-6 rounded-lg max-w-sm text-center">
+        <i data-feather="bell" class="w-20 h-20 mx-auto mb-4 text-blue-500"></i>
+        <h2 class="text-3xl font-extrabold dark:text-white mb-2">Notifikasi & Dashboard</h2>
+        <p class="text-gray-600 dark:text-gray-300 mb-4">
+            Dapatkan notifikasi real-time saat stok bertambah dan pantau statistik barang dalam dashboard interaktif.
+        </p>
+        <a href="#dashboard" class="inline-flex items-center text-blue-600 dark:text-blue-500 hover:underline font-semibold">
+            Pelajari lebih lanjut
+            <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"></path>
+            </svg>
+        </a>
+    </div>
+</div>
+
+<script>
+    // Load Feather icons
+    feather.replace();
+</script>
+
 @endsection
