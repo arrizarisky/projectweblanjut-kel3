@@ -1,139 +1,88 @@
-# 📦 Laravel Stok Barang Project – Tim Kolaborasi
+# Sistem Inventory Barang
 
-Repositori ini merupakan hasil kerja sama tim dalam mengembangkan aplikasi Laravel 10 untuk manajemen stok barang. Panduan ini berisi **langkah-langkah awal yang harus dilakukan oleh setiap anggota tim** agar bisa mulai bekerja secara sinkron dan kolaboratif.
+Sistem Inventory Barang adalah aplikasi berbasis Laravel yang digunakan untuk mengelola stok barang secara efektif dan efisien. Aplikasi ini menyediakan fitur-fitur seperti pencatatan barang, penambahan stok (restock), riwayat restock, dan notifikasi untuk memudahkan pengelolaan inventaris.
 
----
+## Fitur Utama
 
-## ✅ Langkah-Langkah Awal untuk Setiap Anggota Tim Laravel
+- Manajemen Barang: Menambah, mengedit, dan menghapus data barang beserta kategori dan supplier.
+- Restock Barang: Penambahan stok barang dengan pencatatan riwayat restock.
+- Notifikasi: Memberikan notifikasi kepada admin ketika staf menambah stok barang.
+- Dashboard: Menampilkan ringkasan data barang dan statistik stok dalam bentuk grafik.
+- Autentikasi & Hak Akses: Login untuk admin dan staff dengan middleware pengaman.
 
-### 1. 🔁 Clone Repository GitHub
-```bash
-git clone https://github.com/nama-user/nama-repo.git
-cd nama-repo
-```
+## Tech Stack
 
----
+- Laravel Framework 10.x
+- PHP 8.x
+- MySQL / MariaDB
+- Tailwind CSS + DaisyUI + Flowbite (UI/Styling)
+- Chart.js (Untuk grafik statistik stok)
+- Git (Version control)
 
-### 2. ⚙️ Buat File `.env` Lokal
-Salin dari contoh yang tersedia:
-```bash
-cp .env.example .env
-```
+## Instalasi
 
-Lalu atur koneksi database sesuai dengan environment lokal Anda:
-```env
-DB_DATABASE=stok_barang
-DB_USERNAME=root
-DB_PASSWORD=
-```
+1. Clone repository
 
----
+    ```bash
+    git clone https://github.com/username/repo-inventory.git
+    cd repo-inventory
+    ```
 
-### 3. 🛠️ Buat Database Lokal
-Buat database baru secara manual di MySQL/phpMyAdmin:
+2. Install dependencies
 
-```sql
-CREATE DATABASE stok_barang;
-```
+    ```bash
+    composer install
+    npm install
+    npm run dev
+    ```
 
----
+3. Setup environment
 
-### 4. 📦 Install Dependency Laravel
-Jalankan perintah berikut untuk menginstal semua dependensi PHP dan JavaScript:
+    - Copy file `.env.example` ke `.env`
 
-```bash
-composer install
-npm install && npm run dev
-```
+    ```bash
+    cp .env.example .env
+    ```
 
----
+    - Sesuaikan konfigurasi database di `.env`
 
-### 5. 🔐 Generate Application Key
-```bash
-php artisan key:generate
-```
+4. Generate application key
 
----
+    ```bash
+    php artisan key:generate
+    ```
 
-### 6. 🧱 Membuat Tabel (Migration) Sesuai Fitur
-Setiap anggota tim bertanggung jawab membuat tabel migrasi berdasarkan fitur yang dipegang:
+5. Migrasi database dan seeder (jika ada)
 
-| Nama Anggota | Fitur      | Nama Tabel    |
-|--------------|------------|---------------|
-| A            | Barang     | `barangs`     |
-| B            | Kategori   | `kategoris`   |
-| C            | Supplier   | `suppliers`   |
+    ```bash
+    php artisan migrate --seed
+    ```
 
-Gunakan perintah:
-```bash
-php artisan make:migration create_nama_tabel --create=nama_tabel
-```
+6. Jalankan server
 
----
+    ```bash
+    php artisan serve
+    ```
 
-### 7. 🧩 Buat Model, Controller, dan View
-Untuk tiap fitur, buatlah:
+## Penggunaan
 
-- **Model**  
-  ```bash
-  php artisan make:model NamaModel
-  ```
+- Buka browser dan akses `http://localhost:8000`
+- Login menggunakan akun admin atau staff
+- Gunakan menu untuk mengelola barang, supplier, kategori, dan restock stok
+- Admin akan menerima notifikasi saat staf menambah stok barang
 
-- **Controller**  
-  ```bash
-  php artisan make:controller NamaController --resource
-  ```
+## Struktur Folder Penting
 
-- **View**  
-  Buat view di:  
-  ```
-  resources/views/nama_fitur/
-  ```
+- `app/Http/Controllers` — Controller aplikasi
+- `app/Models` — Model Eloquent
+- `resources/views` — Blade templates untuk UI
+- `routes/web.php` — Definisi route aplikasi
+- `database/migrations` — File migrasi database
 
----
+## Kontribusi
 
-### 8. 🔃 Jalankan Migrasi
-Setelah semua file migrasi siap:
-```bash
-php artisan migrate
-```
+Kontribusi sangat diterima! Silakan buat issue atau pull request untuk perbaikan dan fitur baru.
 
----
+## Lisensi
 
-### 9. 🌿 Buat dan Kerjakan di Branch Masing-Masing
-```bash
-git checkout -b fitur/nama-fitur
-```
-
-Contoh:  
-```bash
-git checkout -b fitur/barang
-```
-
----
-
-### 10. 🚀 Push Perubahan ke Branch
-```bash
-git add .
-git commit -m "Selesai fitur barang"
-git push origin fitur/barang
-```
-
----
-
-### 11. 🔄 Buat Pull Request di GitHub
-- Buka GitHub
-- Buat Pull Request dari branch `fitur/nama-fitur` ke `main`
-- Tunggu review dan merge oleh ketua tim atau anggota lain
-
----
-
-## 📌 Catatan Tambahan
-
-- Jangan pernah meng-upload file `.env` ke GitHub (sudah di-.gitignore).
-- File `config/database.php` **tidak perlu diubah**.
-- Selalu jalankan `git pull origin main` sebelum memulai kerja harian.
-
----
-
-💬 Jika ada pertanyaan atau konflik dalam Git, segera diskusikan bersama tim.
+Project ini menggunakan lisensi MIT — lihat file [LICENSE](LICENSE) untuk detail.
