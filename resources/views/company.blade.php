@@ -76,59 +76,54 @@
                 </div>
             </div>
     </nav>
-   <div class="container mx-auto px-4 py-12 text-center">
-        <h1 class="text-5xl font-extrabold dark:text-white mb-4">Selamat Datang di Ukansee</h1>
-        <p class="text-xl text-gray-600 dark:text-gray-300 mb-12 max-w-3xl mx-auto">
-            Sistem Inventory Barang unggulan dari <span class="font-semibold text-blue-600">Agresia</span>, dirancang untuk memudahkan pengelolaan stok dan operasional bisnis Perusahaan secara efektif dan efisien.
+   <div class="flex flex-col items-center justify-center px-4 py-12 mx-auto max-w-screen-xl text-center">
+        <h1 class="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white">Selamat Datang di <span class="font-semibold text-blue-600">Ukansee</h1></span>
+        <p class="text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400 mt-4 mb-8">
+            Sistem Inventory Barang unggulan dari Agresia, dirancang untuk memudahkan pengelolaan stok dan operasional bisnis Perusahaan secara efektif dan efisien.
         </p>
+    </div>
 
-        <div class="flex justify-center space-x-6 flex-wrap">
-            <!-- Fitur 1: Manajemen Barang -->
-            <div class="card bg-gray-100 dark:bg-gray-800 shadow-lg p-6 rounded-lg max-w-sm text-center mb-6">
-            <i data-feather="box" class="w-20 h-20 mx-auto mb-4 text-blue-500"></i>
-            <h2 class="text-3xl font-extrabold dark:text-white mb-2">Manajemen Barang</h2>
-            <p class="text-gray-600 dark:text-gray-300 mb-4">
-                Kelola data barang, kategori, dan supplier dengan mudah dan terstruktur.
-            </p>
-            <a href="#manajemen-barang" class="inline-flex items-center text-blue-600 dark:text-blue-500 hover:underline font-semibold">
-                Pelajari lebih lanjut
-                <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"></path>
-                </svg>
-            </a>
+          <!-- Isi -->
+        <div class="grid md:grid-cols-2 gap-8 px-4 max-w-screen-xl mx-auto mb-12">
+            <div class="bg-gray-100 dark:bg-gray-800 p-6 rounded-lg shadow">
+                <div class="flex items-center mb-3 space-x-2 rtl:space-x-reverse">
+                    <i data-feather="info" class="w-6 h-6 text-blue-500 mr-2"></i>
+                    <h3 class="text-3xl font-bold dark:text-white">Tentang Agresia</h3>
+                </div>
+                <p class="text-gray-700 dark:text-gray-300">
+                    Agresia adalah perusahaan teknologi yang berfokus pada pengembangan sistem informasi untuk mendukung operasional bisnis. Kami berkomitmen untuk membangun solusi yang relevan dan berdampak langsung terhadap kinerja tim Anda.
+                </p>
             </div>
 
-            <!-- Fitur 2: Restock & Riwayat -->
-            <div class="card bg-gray-100 dark:bg-gray-800 shadow-lg p-6 rounded-lg max-w-sm text-center mb-6">
-                <i data-feather="refresh-cw" class="w-20 h-20 mx-auto mb-4 text-blue-500"></i>
-                <h2 class="text-3xl font-extrabold dark:text-white mb-2">Restock & Riwayat</h2>
-                <p class="text-gray-600 dark:text-gray-300 mb-4">
-                    Tambah stok barang dan pantau riwayat restock secara realtime.
-                </p>
-                <a href="#restock" class="inline-flex items-center text-blue-600 dark:text-blue-500 hover:underline font-semibold">
-                    Pelajari lebih lanjut
-                    <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"></path>
-                    </svg>
-                </a>
+            <div class="bg-gray-100 dark:bg-gray-800 p-6 rounded-lg shadow">
+                <div class="flex items-center mb-3 space-x-2 rtl:space-x-reverse">
+                    <i data-feather="layers" class="w-6 h-6 text-blue-500 mr-2"></i>
+                    <h3 class="text-3xl font-bold dark:text-white">Tentang Ukansee</h3>
                 </div>
+                    <ul class=" pl-5 text-gray-700 dark:text-gray-300 space-y-2 leading-9">
+                        <li>📦 Manajemen Barang: tambah, ubah, hapus data barang, kategori, dan supplier.</li>
+                        <li>📈 Riwayat Restock: catatan otomatis setiap kali stok diperbarui.</li>
+                        <li>🔔 Notifikasi: pemberitahuan real-time untuk admin saat restock dilakukan.</li>
+                        <li>📊 Dashboard Statistik: tampilan visual jumlah stok dan aktivitas terkini.</li>
+                        <li>🔐 Login Aman: autentikasi admin dan staf dengan sistem hak akses.</li>
+                    </ul>
+                </div>
+            </div>
 
-                <!-- Fitur 3: Notifikasi & Dashboard -->
-                <div class="card bg-gray-100 dark:bg-gray-800 shadow-lg p-6 rounded-lg max-w-sm text-center mb-6">
-                <i data-feather="bell" class="w-20 h-20 mx-auto mb-4 text-blue-500"></i>
-                <h2 class="text-3xl font-extrabold dark:text-white mb-2">Notifikasi & Dashboard</h2>
-                <p class="text-gray-600 dark:text-gray-300 mb-4">
-                    Dapatkan notifikasi real-time dan pantau statistik stok di dashboard interaktif.
-                </p>
-                <a href="#dashboard" class="inline-flex items-center text-blue-600 dark:text-blue-500 hover:underline font-semibold">
-                    Pelajari lebih lanjut
-                    <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"></path>
-                    </svg>
-                </a>
+            <!-- Manfaat -->
+            <div class="bg-gray-100 dark:bg-gray-800 p-6 rounded-lg shadow-lg max-w-4xl mx-auto text-left">
+                <div class="flex items-center mb-4 space-x-2 rtl:space-x-reverse">
+                    <i data-feather="thumbs-up" class="w-8 h-8 text-blue-500 mr-3"></i>
+                    <h2 class="text-3xl font-extrabold dark:text-white">Manfaat</h2>
                 </div>
+                <ul class=" pl-5 text-gray-700 dark:text-gray-300 space-y-2 text-lg leading-9">
+                    <li><strong>⏱ Efisiensi waktu:</strong> Proses restock dan pencatatan jadi lebih cepat.</li>
+                    <li><strong>📘 Transparansi tinggi:</strong> Semua aktivitas dicatat otomatis dan bisa dilacak.</li>
+                    <li><strong>📍 Kontrol penuh:</strong> Admin mendapatkan notifikasi langsung atas semua perubahan.</li>
+                    <li><strong>📞 Kemudahan support:</strong> Sistem mudah digunakan dengan dokumentasi terarah.</li>
+                </ul>
+            </div>
         </div>
-    </div>
 
 <script>
   feather.replace();
