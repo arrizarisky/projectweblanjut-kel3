@@ -12,9 +12,9 @@ Sistem Inventory Barang adalah aplikasi berbasis Laravel yang digunakan untuk me
 
 ## Tech Stack
 
-- Laravel Framework 10.x
-- PHP 8.x
-- MySQL / MariaDB
+- Laravel Framework 10
+- PHP 8.2
+- MySQL
 - Tailwind CSS + DaisyUI + Flowbite (UI/Styling)
 - Chart.js (Untuk grafik statistik stok)
 - Git (Version control)
@@ -79,9 +79,11 @@ Sistem Inventory Barang adalah aplikasi berbasis Laravel yang digunakan untuk me
 - `routes/web.php` — Definisi route aplikasi
 - `database/migrations` — File migrasi database
 
-## Kontribusi
+## Kontributor
 
-Kontribusi sangat diterima! Silakan buat issue atau pull request untuk perbaikan dan fitur baru.
+- Muhammad Arriza Risky
+- Sultan Rafi Djafar
+- Ronatal Habeahan
 
 ## Lisensi
 
