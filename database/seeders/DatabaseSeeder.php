@@ -4,6 +4,10 @@ namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Carbon;
+use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Str;
+use App\Models\User;
 
 class DatabaseSeeder extends Seeder
 {
@@ -12,11 +16,14 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        // \App\Models\User::factory(10)->create();
-
-        // \App\Models\User::factory()->create([
-        //     'name' => 'Test User',
-        //     'email' => 'test@example.com',
-        // ]);
+        User::create([
+            'name' => 'Admin',
+            'username' => 'admin', // tambahkan username jika diperlukan
+            'email' => 'admin@gmail.com',
+            'email_verified_at' => Carbon::now(), // tandai email sudah diverifikasi
+            'usertype' => 'admin', // tambahkan field role jika pakai sistem role
+            'password' => Hash::make('admin'), // ubah ke password aman
+            'remember_token' => Str::random(10),
+        ]);
     }
 }
