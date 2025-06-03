@@ -7,6 +7,7 @@ use App\Http\Controllers\Admin\AdminController;
 use App\Http\Controllers\BarangController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\SuppliersController;
+use App\Http\Controllers\ExportController;
 
 /*
 |--------------------------------------------------------------------------
@@ -71,3 +72,5 @@ Route::middleware(['auth', 'user'])->prefix('user')->name('user.')->group(functi
 
  Route::get('user/barang/restockHistory', [BarangController::class, 'restockHistoryUser'])->name('user.barang.restockHistory');
 
+Route::get('/export/barang/pdf', [ExportController::class, 'exportPDF'])->name('export.barang.pdf');
+Route::get('/export/barang/excel', [ExportController::class, 'exportExcel'])->name('export.barang.excel');

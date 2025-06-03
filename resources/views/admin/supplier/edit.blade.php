@@ -13,17 +13,17 @@
                     @method('PUT')
 
                     <div class="mb-4">
-                        <label class="label">Nama Kategori</label>
+                        <label class="label">Nama Supplier</label>
                         <input type="text" name="name" class="input input-bordered w-full" value="{{ old('name', $supplier->name) }}" required>
                     </div>
                     <div class="mb-4">
-                        <label class="label">Nama Kategori</label>
-                        <input type="text" name="name" class="input input-bordered w-full" value="{{ old('contact_info', $supplier->contact_info) }}" required>
+                        <label class="label">Contact Info</label>
+                        <input type="text" name="contact_info" class="input input-bordered w-full" value="{{ old('contact_info', $supplier->contact_info) }}" required>
                     </div>
 
                     <div class="mt-6">
                         <button class="btn btn-primary">Update</button>
-                        <a href="{{ route('admin.kategori.index') }}" class="btn btn-secondary ml-2">Batal</a>
+                        <a href="{{ route('admin.supplier.index') }}" class="btn btn-secondary ml-2">Batal</a>
                     </div>
                 </form>
             </div>

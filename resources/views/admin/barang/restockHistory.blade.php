@@ -10,7 +10,7 @@
             @foreach ($histories as $history)     
             <li class="list-row">
                 <div>
-                <div>{{ $history->barang->name }}</div>
+                <div>{{ $history->barang->name ?? 'Dihapus' }}</div>
                 <div class="text-xs uppercase font-semibold opacity-60">{{ $history->user->name }}</div>
                 </div>
                 <p class="list-col-wrap text-xs">
