@@ -18,6 +18,11 @@ Sistem Inventory Barang adalah aplikasi berbasis Laravel yang digunakan untuk me
 - Tailwind CSS + DaisyUI + Flowbite (UI/Styling)
 - Chart.js (Untuk grafik statistik stok)
 - Git (Version control)
+- Composer (Dependency Manager)
+- Laravel Breeze
+- DaisyUI
+- FlowBite
+- alpine js
 
 ## Instalasi
 
