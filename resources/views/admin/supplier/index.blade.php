@@ -26,7 +26,7 @@
                         <thead>
                             <tr>
                                 <th>No</th>
-                                <th>Nama Kategori</th>
+                                <th>Nama Supplier</th>
                                 <th>Contact Info</th>
                                 <th>Aksi</th>
                             </tr>

@@ -73,6 +73,7 @@
                                     <th>ID</th>
                                     <th>Nama Barang</th>
                                     <th>Kategori</th>
+                                    <th>Supplier</th>
                                     <th>Stok</th>
                                     <th>Price</th>
                                     <th>Created By</th>
@@ -85,10 +86,11 @@
                                 <tr>
                                     <td>{{ $barang->id }}</td>
                                     <td>{{ $barang->name }}</td>
-                                    <td>{{ $barang->category->name }}</td>
+                                    <td>{{ $barang->category->name ?? '-' }}</td>
+                                    <td>{{ $barang->supplier?->name ?? '-' }}</td>
                                     <td>{{ $barang->quantity }}</td>
                                     <td>Rp {{ number_format($barang->price, 2, ',', '.') }}</td>
-                                    <td>id {{ $barang->supplier->created_by }}</td>
+                                    <td>{{  $barang->supplier ? 'id ' . $barang->supplier->created_by : '-'  }}</td>
                                     <td>{{ $barang->description }}</td>
                                     <td class="flex gap-2">
                                         <a href="{{ route('admin.barang.edit', $barang->id) }}" class="btn btn-sm btn-warning"><i data-feather="edit"></i></a>

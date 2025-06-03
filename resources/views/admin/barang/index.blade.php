@@ -52,6 +52,8 @@
                         @endforeach
                     </tbody>
                 </table>
+                        <a href="{{ route('export.barang.pdf') }}" class="btn btn-outline btn-error">Download PDF</a>
+                        <a href="{{ route('export.barang.excel') }}" class="btn btn-success">Download Excel</a>
             </div>
         </div>
     </div>
